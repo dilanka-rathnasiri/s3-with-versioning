@@ -36,7 +36,8 @@ const stack = async (): Promise<void> => {
             id: "expire-non-current-version",
             status: "Enabled",
             noncurrentVersionExpiration: {
-                newerNoncurrentVersions: configs.NEWER_NON_CURRENT_VERSION,
+                newerNoncurrentVersions: configs.NEWER_NON_CURRENT_VERSION.toString(),
+                noncurrentDays: configs.NON_CURRENT_DAYS
             },
         }],
     }, {dependsOn: [bucket]});
