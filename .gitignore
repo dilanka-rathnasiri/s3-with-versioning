@@ -1,0 +1,6 @@
+/bin/
+**/node_modules/
+**/.idea
+**/.vscode
+**/configs.yaml
+Pulumi.dev.yaml
